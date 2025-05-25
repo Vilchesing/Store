@@ -1,0 +1,47 @@
+.modal-menu{
+  height: 77vh;
+  background-color: #1765be;
+  border-top: 0.2px solid rgb(0, 0, 0, 0.4);
+}
+.modal-list{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 24px 0px;
+  margin-top: 20px;
+}
+.modal-search{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-top: 0.2px solid rgb(255, 255, 255, 0.1);
+  border-bottom: 0.2px solid rgb(255, 255, 255, 0.1);
+  padding: 10px 0px;
+}
+.modal-input{
+  width: 60%;
+
+}
+.modal-button{
+  width: 20%;
+  
+}
+.modal-button, .modal-input{
+  background-color: rgb(255, 255, 255, 0.4);
+  border: none;
+  padding: 8px;
+  color: #fafafa;
+  outline: none;
+}
+.modal-link-car{
+  background-image: url("../assets/carIcon.png");
+  background-repeat: no-repeat;
+  background-position: left center; /* Ejemplo: a la izquierda y centrado verticalmente */
+  background-size: 20px 20px;
+  padding-left: 25px; 
+  color: #007bff;
+  text-decoration: none;
+  display: inline-block; 
+}
