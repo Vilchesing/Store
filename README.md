@@ -14,4 +14,3 @@ Este es un proyecto de una tienda en línea simple, construida para demostrar el
     * Mysql
 
 
-Este proyecto está bajo la Licencia MIT.
