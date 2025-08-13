@@ -1,0 +1,318 @@
+/* --- Poppins Black --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Black.woff2') format('woff2'),
+         url('/fonts/Poppins-Black.woff') format('woff'),
+         url('/fonts/Poppins-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Poppins Black Italic --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-BlackItalic.woff2') format('woff2'),
+         url('/fonts/Poppins-BlackItalic.woff') format('woff'),
+         url('/fonts/Poppins-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* --- Poppins Bold --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Bold.woff2') format('woff2'),
+         url('/fonts/Poppins-Bold.woff') format('woff'),
+         url('/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Poppins Bold Italic --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-BoldItalic.woff2') format('woff2'),
+         url('/fonts/Poppins-BoldItalic.woff') format('woff'),
+         url('/fonts/Poppins-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* --- Poppins ExtraBold --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-ExtraBold.woff2') format('woff2'),
+         url('/fonts/Poppins-ExtraBold.woff') format('woff'),
+         url('/fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Poppins ExtraBold Italic --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-ExtraBoldItalic.woff2') format('woff2'),
+         url('/fonts/Poppins-ExtraBoldItalic.woff') format('woff'),
+         url('/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* --- Poppins ExtraLight --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-ExtraLight.woff2') format('woff2'),
+         url('/fonts/Poppins-ExtraLight.woff') format('woff'),
+         url('/fonts/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Poppins ExtraLight Italic --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-ExtraLightItalic.woff2') format('woff2'),
+         url('/fonts/Poppins-ExtraLightItalic.woff') format('woff'),
+         url('/fonts/Poppins-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* --- Poppins Italic --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Italic.woff2') format('woff2'),
+         url('/fonts/Poppins-Italic.woff') format('woff'),
+         url('/fonts/Poppins-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* --- Poppins Light --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Light.woff2') format('woff2'),
+         url('/fonts/Poppins-Light.woff') format('woff'),
+         url('/fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Poppins Light Italic --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-LightItalic.woff2') format('woff2'),
+         url('/fonts/Poppins-LightItalic.woff') format('woff'),
+         url('/fonts/Poppins-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* --- Poppins Medium --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Medium.woff2') format('woff2'),
+         url('/fonts/Poppins-Medium.woff') format('woff'),
+         url('/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Poppins Medium Italic --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-MediumItalic.woff2') format('woff2'),
+         url('/fonts/Poppins-MediumItalic.woff') format('woff'),
+         url('/fonts/Poppins-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* --- Poppins Regular --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Regular.woff2') format('woff2'),
+         url('/fonts/Poppins-Regular.woff') format('woff'),
+         url('/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Poppins SemiBold --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-SemiBold.woff2') format('woff2'),
+         url('/fonts/Poppins-SemiBold.woff') format('woff'),
+         url('/fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Poppins SemiBold Italic --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-SemiBoldItalic.woff2') format('woff2'),
+         url('/fonts/Poppins-SemiBoldItalic.woff') format('woff'),
+         url('/fonts/Poppins-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* --- Poppins Thin --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Thin.woff2') format('woff2'),
+         url('/fonts/Poppins-Thin.woff') format('woff'),
+         url('/fonts/Poppins-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Poppins Thin Italic --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-ThinItalic.woff2') format('woff2'),
+         url('/fonts/Poppins-ThinItalic.woff') format('woff'),
+         url('/fonts/Poppins-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* --- TitilliumWeb Black --- */
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('/fonts/TitilliumWeb-Black.woff2') format('woff2'),
+         url('/fonts/TitilliumWeb-Black.woff') format('woff'),
+         url('/fonts/TitilliumWeb-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- TitilliumWeb Bold --- */
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('/fonts/TitilliumWeb-Bold.woff2') format('woff2'),
+         url('/fonts/TitilliumWeb-Bold.woff') format('woff'),
+         url('/fonts/TitilliumWeb-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- TitilliumWeb Bold Italic --- */
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('/fonts/TitilliumWeb-BoldItalic.woff2') format('woff2'),
+         url('/fonts/TitilliumWeb-BoldItalic.woff') format('woff'),
+         url('/fonts/TitilliumWeb-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* --- TitilliumWeb ExtraLight --- */
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('/fonts/TitilliumWeb-ExtraLight.woff2') format('woff2'),
+         url('/fonts/TitilliumWeb-ExtraLight.woff') format('woff'),
+         url('/fonts/TitilliumWeb-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- TitilliumWeb ExtraLight Italic --- */
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('/fonts/TitilliumWeb-ExtraLightItalic.woff2') format('woff2'),
+         url('/fonts/TitilliumWeb-ExtraLightItalic.woff') format('woff'),
+         url('/fonts/TitilliumWeb-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* --- TitilliumWeb Italic --- */
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('/fonts/TitilliumWeb-Italic.woff2') format('woff2'),
+         url('/fonts/TitilliumWeb-Italic.woff') format('woff'),
+         url('/fonts/TitilliumWeb-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* --- TitilliumWeb Light --- */
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('/fonts/TitilliumWeb-Light.woff2') format('woff2'),
+         url('/fonts/TitilliumWeb-Light.woff') format('woff'),
+         url('/fonts/TitilliumWeb-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- TitilliumWeb Light Italic --- */
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('/fonts/TitilliumWeb-LightItalic.woff2') format('woff2'),
+         url('/fonts/TitilliumWeb-LightItalic.woff') format('woff'),
+         url('/fonts/TitilliumWeb-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* --- TitilliumWeb Regular --- */
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('/fonts/TitilliumWeb-Regular.woff2') format('woff2'),
+         url('/fonts/TitilliumWeb-Regular.woff') format('woff'),
+         url('/fonts/TitilliumWeb-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- TitilliumWeb SemiBold --- */
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('/fonts/TitilliumWeb-SemiBold.woff2') format('woff2'),
+         url('/fonts/TitilliumWeb-SemiBold.woff') format('woff'),
+         url('/fonts/TitilliumWeb-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- TitilliumWeb SemiBold Italic --- */
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('/fonts/TitilliumWeb-SemiBoldItalic.woff2') format('woff2'),
+         url('/fonts/TitilliumWeb-SemiBoldItalic.woff') format('woff'),
+         url('/fonts/TitilliumWeb-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}

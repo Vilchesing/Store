@@ -1,17 +1,21 @@
 import './App.css'
-import "./component-style/darkbar.css"
 import React from 'react'
-import { DarkBar } from './components/darkbar.jsx'
-import { BlueBar } from './components/bluebar.jsx'
+import { BrowserRouter } from 'react-router-dom';
+import "./component-style/darkbar.css"
+import "./component-style/categorys.css"
+import "./component-style/mainstore.css"
+import "./component-style/mediaquerys.css"
+import "./component-style/fonts.css"
+import "./component-style/footer.css"
+import "./component-style/LoginPage/LoginPage.css"
+import { AppRoutes } from './routes/AppRoutes.jsx';
+
 
 function App() {
-
-
-  return (
-    <header>
-        <DarkBar />
-        <BlueBar />
-    </header>
+  return(
+<BrowserRouter>
+  <AppRoutes/>
+</BrowserRouter>  
   )
 }
 

@@ -4,8 +4,9 @@
     box-sizing: border-box;
     width: 80%;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     justify-self: center;
+    padding: 8px;
 }
 .top-bar-list{
     display: flex;
@@ -15,4 +16,13 @@
 ul{
     margin: 0;
     padding: 0;
+}
+.center-top-bar{
+    display: flex;
+    gap: 0px 10px;
+    justify-content: center;
+}
+.center-top-bar img{ 
+width: 24px;
+filter: invert(100%);
 }

@@ -1,6 +1,6 @@
 .modal-menu{
   height: 77vh;
-  background-color: #1765be;
+  background-color:var(--color-fondo-secundario);
   border-top: 0.2px solid rgb(0, 0, 0, 0.4);
 }
 .modal-list{

@@ -1,0 +1,43 @@
+@import url('../component-style/variables.css');
+.categorys-container{
+    width: 250px; /* <-- O el ancho que desees para tu sidebar */
+    flex-shrink: 0; /* <-- Importante: Evita que el sidebar se encoja */
+    
+    box-sizing: border-box;
+    margin-top: 0; 
+    font-size: 24px;
+}
+.category-list{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+  .category-list-items{
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-width: 0px 1px 1px 1px; /* Top, Right, Bottom, Left */
+  background-color: rgba(220, 220, 220, 0.1);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 0px 40px;
+  font-size: var(--font-size-texts);
+  }
+  .category-list-items-tittle{
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 32px;
+  }
+  .category-list-img{
+    width: 32px;
+    filter: invert(100%); 
+  }
+
+.category-list-items:not(.category-list-items-tittle):hover,
+.category-list-items:not(.category-list-items-tittle) a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #3498db;
+}
+.category-list-items-tittle{
+  border: none;
+}

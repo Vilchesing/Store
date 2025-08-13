@@ -1,7 +1,12 @@
+@import url('./component-style/variables.css');
+html, body {
+    height: 100%; /* Asegura que html y body ocupen toda la altura de la ventana */
+    margin: 0;
+}
 *{
     list-style: none;
     margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Titillium Web';
     text-decoration: none;
 }
 a:link{
@@ -12,8 +17,12 @@ a:visited{
 
 }
 body{
-    background-color: #121212;
+    background-color: var(--color-fondo);
     color: #fafafa;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    min-height: 100vh; 
+    position: relative;
 }
 .blue-bar{
     background-color: #1765be;
@@ -32,4 +41,25 @@ body{
 .size-6{
     width: 22px;
     box-sizing: border-box;
+}
+.main-layout {
+    display: flex; /* Convierte el contenedor principal en un flex container */
+    flex-direction: column; /* Organiza los elementos hijos en una columna (header, main, footer) */
+    min-height: 100vh; /* Asegura que el contenedor ocupe al menos el 100% de la altura del viewport */
+}
+
+.main-layout main {
+    flex: 1; /* Esto hace que el contenido principal ocupe todo el espacio disponible */
+    /* Aquí puedes añadir padding o margin si necesitas espacio alrededor del contenido */
+    /* Por ejemplo: padding: 20px; */
+}
+
+
+@keyframes aparecer {
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+}  
 }

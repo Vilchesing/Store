@@ -1,0 +1,21 @@
+:root{
+  --color-exito: #28a745;
+  --color-advertencia: #ffc107;
+  --color-error: #dc3545;
+  --color-texto-oscuro: #343a40;
+  --color-texto-claro: #fafafa;
+  --color-focus-text: rgb(52, 152, 219);
+  --color-fondo: #121212;
+  --color-fondo-secundario: #1765be;
+  --color-fondo-btn:#3498db;
+  --color-borde: #dee2e6;
+  --colo-gray:#222;
+  --color-texto-claro: #f0f0f0;
+  --color-borde-hover: #00ff00; /* Verde vibrante para el borde */
+  /*Terminamos la seccion de colores*/
+
+  /*Comenzaremos con los estilos para el texto*/
+  --font-size-texts: 1.2rem;
+  --font-size-tittles: 1.9rem;
+
+}

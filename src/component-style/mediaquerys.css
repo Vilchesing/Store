@@ -1,0 +1,24 @@
+@media (730px <= width <= 99999px){
+  .main-store-container{
+  width: 60%;
+  flex-direction: row;
+  gap: 60px 40px;
+  flex-wrap: wrap;
+  }
+  .product{
+  width: 20%;
+}
+
+}
+
+
+@media (999px <= width <= 99999px){
+  
+.category-list{
+
+  width: 100%;
+}
+main{
+  gap: 0px 50px;
+}
+}

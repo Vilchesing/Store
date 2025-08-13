@@ -1,0 +1,71 @@
+@import url('../component-style/variables.css');
+main{
+    flex: 1; /* Esto es para que main ocupe el espacio disponible y empuje el footer */
+    display: flex; /* <-- CAMBIO CLAVE: Usa Flexbox para el layout interno de main */
+    flex-direction: row; /* <-- Para que Categorys y MainStore estén uno al lado del otro */
+    gap: 20px; /* Espacio entre el sidebar y el contenido principal */
+    padding: 20px; /* Opcional: padding alrededor de todo el contenido del main */
+    box-sizing: border-box; /* Asegura que padding no aumente el ancho total */
+    align-items: flex-start; /* Alinea los elementos al inicio (arriba) */
+    justify-content: center;
+}
+.main-store-container{
+    width: 90%;
+    flex: 0.8;
+    display: flex;
+    flex-direction: row;
+    gap: 60px 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product{
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  color: rgb(140, 140, 140);
+}
+.product-img{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.product-price, .product-info{
+  line-height: 30px;
+  font-weight: 700;
+}
+.product-price{
+  font-size: 1.25rem;
+}
+.product-price, .product-info:hover{
+  color: var(--color-focus-text);
+}
+.product-with-stock{
+  background-color: var(--color-fondo-secundario);
+  color: var(--color-texto-claro);
+  padding: 4px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  max-width: 190px;
+}
+.add-cart-button{
+  background-color: rgb(255, 255, 255, 0.4);
+  color: var(--color-texto-claro);
+  border-radius: 6px;
+  border: none;
+  padding: 4px;
+  min-width: 175px;
+  min-height: 41.42px;
+  opacity: 0;
+  transition: 0.6s opacity ease-in-out;
+}
+
+.add-cart-button:hover{
+  background-color: var(--color-fondo-btn);
+}
+.product:hover .add-cart-button{
+  opacity: 1;
+}

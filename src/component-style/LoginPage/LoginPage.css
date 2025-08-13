@@ -1,0 +1,163 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background-color: #222;
+  color: var(--color-texto-claro);
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 350px;
+  gap: 20px;
+  background-color: #333;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-decoration {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  /* REMOVIDO: overflow: hidden; -- Esto es clave para que ::after se vea por fuera */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Puedes mantener un borde sutil en el contenedor si quieres un marco fijo */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra suave para la base */
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  /* Si la imagen en sí tiene un borde, podrías verlo como un doble borde.
+     Asegúrate de que no tenga un 'border' directo que interfiera. */
+}
+
+.profile-decoration::after {
+  content: "";
+  position: absolute;
+  /* Ajustamos top/left y width/height para que el ::after comience ligeramente más grande */
+  top: -5px; /* Empieza 5px hacia arriba del borde del padre */
+  left: -5px; /* Empieza 5px hacia la izquierda del borde del padre */
+  width: calc(100% + 10px); /* 100% del padre + 5px de cada lado */
+  height: calc(100% + 10px); /* 100% del padre + 5px de cada lado */
+  border-radius: 50%;
+  border: 4px solid var(--color-borde-hover); /* El color del borde es el verde pulsante */
+  box-sizing: border-box; /* Asegura que el borde se dibuje hacia adentro de width/height */
+  opacity: 0; /* Inicialmente invisible */
+  transform: scale(0.9); /* Empezará ligeramente más pequeño antes de aparecer */
+
+  /* Transición para la aparición/desaparición suave */
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  animation: none; /* Sin animación por defecto */
+}
+
+.profile-decoration:hover::after {
+    opacity: 1;
+    transform: scale(1);
+    animation: pulseOuterBorder 1.5s infinite ease-in-out;
+}
+/* Efecto al hacer hover sobre el contenedor principal */
+.login-container:has(.loggin-button:hover) .profile-decoration::after {
+  opacity: 1;
+  transform: scale(1);
+  animation: pulseOuterBorder 1.5s infinite ease-in-out;
+}
+/* ... El resto de tus estilos (input-group, loggin-button) ... */
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  width: 100%;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: var(--color-texto-claro);
+}
+
+.input-group input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  background-color: #444;
+  color: var(--color-texto-claro);
+}
+
+.loggin-button {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 30px;
+  padding: 10px 10px;
+  font-size: 1rem;
+  background-color: rgba(100, 100, 100, 0.2);
+  border: none;
+  color: var(--color-texto-claro);
+  transition: background 0.3s ease, color 0.3s ease;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.loggin-button:hover {
+  background-color: #00bcd4;
+  color: var(--color-texto-oscuro);
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+}
+.option-decoration-password, .option-decoration-register{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.option-decoration-password::after, .option-decoration-register::after{
+  content: "";
+  width: 100px;
+  position: absolute;
+  border: 2px solid #fafafa; /* El color del borde es el verde pulsante */
+  box-sizing: border-box; /* Asegura que el borde se dibuje hacia adentro de width/height */
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  opacity: 0; /* Inicialmente invisible */
+  transition: opacity 0.6s linear;
+}
+.option-password:hover ~ .option-decoration-password::after{
+  opacity: 1;
+}
+.option-register:hover ~ .option-decoration-register::after{
+  opacity: 1;
+}
+
+/* Define la animación de parpadeo/palpitar (ahora expandiéndose hacia afuera) */
+@keyframes pulseOuterBorder {
+  0% {
+    transform: scale(1); /* Tamaño base (justo fuera de la imagen) */
+    opacity: 0.8; /* Opacidad inicial para el pulso */
+    box-shadow: 0 0 5px 0 rgba(0, 255, 0, 0.4); /* Sombra inicial sutil */
+  }
+  50% {
+    transform: scale(1.1); /* Se expande un 10% más allá de su tamaño base */
+    opacity: 1; /* Máxima opacidad al expandirse */
+    box-shadow: 0 0 20px 8px rgba(0, 255, 0, 0.9); /* Sombra más grande y brillante */
+  }
+  100% {
+    transform: scale(1); /* Vuelve al tamaño base */
+    opacity: 0.8; /* Vuelve a la opacidad inicial */
+    box-shadow: 0 0 5px 0 rgba(0, 255, 0, 0.4); /* Vuelve a la sombra inicial */
+  }
+}

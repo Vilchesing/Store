@@ -1,7 +1,8 @@
 import React from "react"
+import { SocialIcon } from "./SocialIcons";
+import PropTypes from "prop-types";
 
-
-export function DarkBar(){
+export function DarkBar({isLogged, username}){
   return(
     <>
     <div className="container-top-bar">
@@ -16,17 +17,26 @@ export function DarkBar(){
       </div>
 
       <div className="center-top-bar">
-
+        <SocialIcon/>
       </div>
-
       <div className="right-top-bar">
         <ul className="top-bar-list">
-          <li>Iniciar sesion</li>
-          <li>|</li>
-          <li>Registrarme</li>
+          {isLogged ? (
+            <>
+              <li>Bienvenido {username}</li>
+              <li>|</li>
+              <li>Mis pedidos</li>
+            </>
+          ) : (
+            <>
+              <li>Iniciar sesión</li>
+              <li>|</li>
+              <li>Registrarme</li>
+            </>
+          )}
         </ul>
       </div>
-    </div>
-    </>
-  )
-}
+          </div>
+          </>
+        )
+      }

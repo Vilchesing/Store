@@ -1,0 +1,23 @@
+footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  text-align: center;
+  background-color: var(--colo-gray);
+  padding: 40px;
+  animation: aparecer both;
+  animation-timeline: view();
+  animation-range: cover 0% cover 8%;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 0px 80px;
+  justify-content: center;
+  margin-top: 40px;
+  filter: invert(100%);
+}
+.footer-social-icons img{
+  width: 42px;
+  height: 42px;
+}
