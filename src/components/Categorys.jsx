@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import useWindowWidth from '../utils/UseWindowWidth.js'
 
-export function Categorys(){
+export  default function Categorys(){
   const width = useWindowWidth();
   const breakpoint = 989; // Define tu punto de quiebre, por ejemplo, para tablets
 

@@ -17,3 +17,11 @@ export async function login(email, password) {
   return data;
   
 }
+
+export function logout() {
+  // 1. Limpiar el token del localStorage
+  localStorage.removeItem("token");
+
+  // Opcional: Redirigir al usuario a la página de inicio de sesión
+  window.location.href = "/"; 
+}

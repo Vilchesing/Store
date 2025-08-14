@@ -24,20 +24,8 @@ body{
     min-height: 100vh; 
     position: relative;
 }
-.blue-bar{
-    background-color: #1765be;
-    display: flex;
-    justify-content: space-between;
-    padding:  10px;
-    align-items: center;
-}
-.menu-logo-container{
-    border: 1px solid #fafafa;
-    box-sizing: border-box;
-    border-radius: 4px;
-    padding: 9px 10px;
-    margin: 0;
-}
+
+
 .size-6{
     width: 22px;
     box-sizing: border-box;
@@ -49,7 +37,7 @@ body{
 }
 
 .main-layout main {
-    flex: 1; /* Esto hace que el contenido principal ocupe todo el espacio disponible */
+    flex-grow:1; /* Esto hace que el contenido principal ocupe todo el espacio disponible */
     /* Aquí puedes añadir padding o margin si necesitas espacio alrededor del contenido */
     /* Por ejemplo: padding: 20px; */
 }

@@ -2,6 +2,7 @@ import './App.css'
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom';
 import "./component-style/darkbar.css"
+import "./component-style/bluebar.css"
 import "./component-style/categorys.css"
 import "./component-style/mainstore.css"
 import "./component-style/mediaquerys.css"

@@ -1,0 +1,18 @@
+.blue-bar{
+    background-color: #1765be;
+    display: flex;
+    justify-content: space-around;
+    padding:  10px;
+    align-items: center;
+}
+.menu-logo-container{
+    border: 1px solid #fafafa;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 9px 10px;
+    margin: 0;
+}
+.menuOpen{
+    background: transparent;
+    border: none;
+}

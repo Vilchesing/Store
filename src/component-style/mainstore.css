@@ -1,22 +1,32 @@
-@import url('../component-style/variables.css');
+
 main{
-    flex: 1; /* Esto es para que main ocupe el espacio disponible y empuje el footer */
-    display: flex; /* <-- CAMBIO CLAVE: Usa Flexbox para el layout interno de main */
-    flex-direction: row; /* <-- Para que Categorys y MainStore estén uno al lado del otro */
-    gap: 20px; /* Espacio entre el sidebar y el contenido principal */
-    padding: 20px; /* Opcional: padding alrededor de todo el contenido del main */
-    box-sizing: border-box; /* Asegura que padding no aumente el ancho total */
-    align-items: flex-start; /* Alinea los elementos al inicio (arriba) */
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+.main-store-wrapper{
+  margin-top: 40px;
+  width: 80%;
+  display: grid; 
+  grid-template-columns: 250px 02fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 60px; 
+  grid-template-areas: 
+    "Cat  Main "
+    "Cat  Main"
+    "Cat  Main"; 
+  
+}
+.categorys-container{
+  grid-area: Cat;
 }
 .main-store-container{
-    width: 90%;
+    justify-self: center;
     flex: 0.8;
     display: flex;
-    flex-direction: row;
-    gap: 60px 40px;
+    gap: 40px 80px;
     flex-wrap: wrap;
-    justify-content: center;
+    grid-area: Main;
+
 }
 .product{
   width: 100%;

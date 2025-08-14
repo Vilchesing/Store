@@ -1,6 +1,7 @@
 import React from "react"
 import { SocialIcon } from "./SocialIcons";
 import PropTypes from "prop-types";
+import { logout } from "../services/authServices";
 
 export function DarkBar({isLogged, username}){
   return(
@@ -8,11 +9,11 @@ export function DarkBar({isLogged, username}){
     <div className="container-top-bar">
       <div className="left-top-bar">
         <ul className="top-bar-list">
-          <li>Nosotros</li>
+          <a href="#"><li>Nosotros</li></a>
           <li>|</li>
-          <li>Blog</li>
+          <a href="#"><li>Blog</li></a>
           <li>|</li>
-          <li>Contacto</li>
+          <a href="#">Contacto</a>
         </ul>
       </div>
 
@@ -25,13 +26,15 @@ export function DarkBar({isLogged, username}){
             <>
               <li>Bienvenido {username}</li>
               <li>|</li>
-              <li>Mis pedidos</li>
+              <a href="#">Mis pedidos</a>
+              <li>|</li>
+              <li onClick={logout}>Salir</li>
             </>
           ) : (
             <>
-              <li>Iniciar sesión</li>
+              <a href="http://localhost:5173/login"><li>Iniciar sesión</li></a>
               <li>|</li>
-              <li>Registrarme</li>
+              <a href="#"><li>Registrarme</li></a>
             </>
           )}
         </ul>

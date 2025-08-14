@@ -17,7 +17,7 @@ const handleSubmit = async (e) => {
   e.preventDefault();
   try {
     await login(formData.email, formData.password);
-    navigate("/perfil"); // Solo si login no lanza error
+    navigate("/"); // Solo si login no lanza error
   } catch (error) {
     alert(error.message); // Aquí se queda si hay error
   }
@@ -28,7 +28,7 @@ const handleSubmit = async (e) => {
       <div className="login-wrapper">
         <div className="login-container">
           <div className="profile-decoration">
-            <Profile url={"https://media.licdn.com/dms/image/v2/D5603AQEcANUfIajuyA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725849626588?e=1756944000&v=beta&t=n7Y3udYEIptFdU_EUrqAS1sd61L-N43JydrSrzwLgI4"}></Profile>
+            <Profile url={"https://media.licdn.com/dms/image/v2/D5603AQHWyxmzswImHw/profile-displayphoto-crop_800_800/B56ZhPNKEdG4AI-/0/1753675506393?e=1758153600&v=beta&t=BnH7MTGcBv8gabzRKCa3BHIR7QaVgazUB6dyrdzsPZM"}></Profile>
           </div>
 
           <form onSubmit={handleSubmit}>
