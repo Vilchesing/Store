@@ -1,7 +1,8 @@
 import React from "react"
 import { SocialIcon } from "./SocialIcons";
 import PropTypes from "prop-types";
-import { logout } from "../services/authServices";
+import { logout } from "../../auth/services/authServices";
+import "../styles/darkbar.css"
 
 export function DarkBar({isLogged, username}){
   return(
@@ -34,7 +35,7 @@ export function DarkBar({isLogged, username}){
             <>
               <a href="http://localhost:5173/login"><li>Iniciar sesión</li></a>
               <li>|</li>
-              <a href="#"><li>Registrarme</li></a>
+              <a href="http://localhost:5173/register"><li>Registrarme</li></a>
             </>
           )}
         </ul>

@@ -1,9 +1,9 @@
 import React from "react"
-import Categorys from "./Categorys.jsx"
+import Categories from "../../layout/components/Categories.jsx"
 export function MainStore(){
   return<>
   <div className="main-store-wrapper">
-      <Categorys/>
+      <Categories/>
       <div className="main-store-container">
         <div className="product">
         <img src="src\assets\Laptop.png" alt="" className="product-img"/>

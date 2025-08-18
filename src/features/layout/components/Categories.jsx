@@ -1,8 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import useWindowWidth from '../utils/UseWindowWidth.js'
+import useWindowWidth from '../../../utils/UseWindowWidth.js'
+import "../styles/categories.css"
 
-export  default function Categorys(){
+export  default function Categories(){
   const width = useWindowWidth();
   const breakpoint = 989; // Define tu punto de quiebre, por ejemplo, para tablets
 

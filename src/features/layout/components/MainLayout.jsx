@@ -1,7 +1,7 @@
 import React from "react"
-import { BlueBar } from "../BlueBar"
-import { DarkBar } from "../DarkBar.jsx"
-import { Footer } from "../Footer.jsx"
+import { BlueBar } from "../components/Bluebar.jsx"
+import { DarkBar } from "../components/Darkbar.jsx"
+import { Footer } from "../components/Footer.jsx"
 import PropTypes from 'prop-types';
 import { useState, useEffect } from "react";
 import { jwtDecode } from "jwt-decode";

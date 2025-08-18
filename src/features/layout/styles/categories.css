@@ -1,4 +1,4 @@
-@import url('../component-style/variables.css');
+@import url('../../../component-style/variables.css');
 .categorys-container{
     width: 250px; /* <-- O el ancho que desees para tu sidebar */
     flex-shrink: 0; /* <-- Importante: Evita que el sidebar se encoja */

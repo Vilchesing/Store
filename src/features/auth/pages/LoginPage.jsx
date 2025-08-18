@@ -1,9 +1,10 @@
 import React, { useState } from "react"
 import { useNavigate } from "react-router-dom";
-import Profile from "../../components/auth/profile"
-import Input from "../../components/inputFields"
-import Buttons from "../../component-style/button"
-import {login} from "../../services/authServices.js"
+import Profile from "../components/Profile.jsx"
+import Input from "../components/inputFields"
+import Buttons from "../../shared/components/button.jsx"
+import {login} from "../services/authServices.js"
+import "../styles/LoginPage.css"
 
 export function LoginPage(){
   const [formData, setFormData] = useState({email: '', password:''})

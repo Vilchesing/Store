@@ -1,5 +1,5 @@
 import React from "react"
-import "../component-style/modalmenu.css"
+import "../../layout/styles/modalmenu.css"
 
 export function ModalMenu (){
   return(

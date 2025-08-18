@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ModalMenu } from "./ModalMenu";
+import "../styles/bluebar.css"
 
 export function BlueBar() {
   const [isMenuOpen, setIsMenuOpEN] = useState(false);

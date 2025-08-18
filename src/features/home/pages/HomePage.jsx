@@ -1,7 +1,7 @@
 import React from "react";
 
 import { MainStore } from '../components/MainStore.jsx'
-import MainLayout from "../components/layout/MainLayou.jsx";
+import MainLayout from "../../layout/components/MainLayout.jsx";
 
 export function HomePage() {
 
